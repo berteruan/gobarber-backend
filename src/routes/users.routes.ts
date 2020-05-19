@@ -3,6 +3,9 @@ import { Router } from 'express';
 // Services
 import CreateUserService from '../services/CreateUserService';
 
+// Middleware
+import ensureAuthenticated from '../middlewares/ensureAuthenticated';
+
 const usersRoutes = Router();
 
 usersRoutes.post('/', async (request, response) => {
@@ -23,6 +26,10 @@ usersRoutes.post('/', async (request, response) => {
   } catch (err) {
     return response.status(400).json({ error: err.message });
   }
+});
+
+usersRoutes.patch('/avatar', ensureAuthenticated, async (request, response) => {
+  return response.json({ ok: true });
 });
 
 export default usersRoutes;
