@@ -9,7 +9,7 @@ import {
 } from 'typeorm';
 
 // Relations
-import User from './User';
+import User from '@modules/users/infra/typeorm/entities/User';
 
 @Entity('appointments')
 class Appointment {
