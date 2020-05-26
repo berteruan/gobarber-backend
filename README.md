@@ -21,14 +21,14 @@
 
 **RF - Requisitos Funcionais**
 
-- [ ] O usuário deve poder atualizar seu nome, email e senha;
+- [x] O usuário deve poder atualizar seu nome, email e senha;
 
 **RNF - Requisitos não funcionais**
 
 **RN - Regras de negócio**
 
-- [ ] O usuário não pode alterar seu email para um email já utilizado;
-- [ ] Para atualizar sua senha o usuário deve informar a senha antiga;
+- [x] O usuário não pode alterar seu email para um email já utilizado;
+- [x] Para atualizar sua senha o usuário deve informar a senha antiga;
 - [ ] Para atualizar sua senha o usuário precisa confirmar sua nova senha;
 
 # Painel do prestador

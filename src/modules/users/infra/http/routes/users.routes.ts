@@ -11,18 +11,18 @@ import UserAvatarController from '../controllers/UserAvatarController';
 // Middleware
 import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 
-const usersRoutes = Router();
+const usersRouter = Router();
 const usersController = new UsersController();
 const userAvatarContoller = new UserAvatarController();
 const upload = multer(uploadConfig);
 
-usersRoutes.post('/', usersController.create);
+usersRouter.post('/', usersController.create);
 
-usersRoutes.patch(
+usersRouter.patch(
   '/avatar',
   ensureAuthenticated,
   upload.single('avatar'),
   userAvatarContoller.update,
 );
 
-export default usersRoutes;
+export default usersRouter;

@@ -4,9 +4,9 @@ import { container } from 'tsyringe';
 // Controllers
 import SessionsController from '../controllers/SessionsController';
 
-const sessionsRoutes = Router();
+const sessionsRouter = Router();
 const sessionsController = new SessionsController();
 
-sessionsRoutes.post('/', sessionsController.create);
+sessionsRouter.post('/', sessionsController.create);
 
-export default sessionsRoutes;
+export default sessionsRouter;
