@@ -5,12 +5,24 @@ import ensureAuthenticate from '@modules/users/infra/http/middlewares/ensureAuth
 
 // Controller
 import ProvidersController from '../controllers/ProvidersController';
+import ProviderMonthAvailabilityCotronller from '../controllers/ProviderMonthAvailabilityCotronller';
+import ProviderDayAvailabilityCotronller from '../controllers/ProviderDayAvailabilityCotronller';
 
 const providersRouter = Router();
 const providersController = new ProvidersController();
+const providerMonthAvailabilityCotronller = new ProviderMonthAvailabilityCotronller();
+const providerDayAvailabilityCotronller = new ProviderDayAvailabilityCotronller();
 
 providersRouter.use(ensureAuthenticate);
 
 providersRouter.get('/', providersController.index);
+providersRouter.get(
+  '/:provider_id/month-availability',
+  providerMonthAvailabilityCotronller.index,
+);
+providersRouter.get(
+  '/:provider_id/day-availability',
+  providerDayAvailabilityCotronller.index,
+);
 
 export default providersRouter;
