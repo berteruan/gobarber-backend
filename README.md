@@ -15,7 +15,7 @@
 **RN - Regras de negócio**
 
 - [x] O link enviado por email para resetar senha, deve expirar em 2h;
-- [ ] O usuário precisa confimrar a nova senha ao resetar sua senha;
+- [x] O usuário precisa confimrar a nova senha ao resetar sua senha;
 
 # Atualização do perfil
 
@@ -29,7 +29,7 @@
 
 - [x] O usuário não pode alterar seu email para um email já utilizado;
 - [x] Para atualizar sua senha o usuário deve informar a senha antiga;
-- [ ] Para atualizar sua senha o usuário precisa confirmar sua nova senha;
+- [x] Para atualizar sua senha o usuário precisa confirmar sua nova senha;
 
 # Painel do prestador
 
