@@ -9,7 +9,7 @@
 **RNF - Requisitos não funcionais**
 
 - [x] Utilizar Mailtrap pra testar envios em ambiente de dev;
-- [ ] Utilizar o Amazon SES para envios em produção;
+- [x] Utilizar o Amazon SES para envios em produção;
 - [ ] O envio de emails deve acontecer em segundo plano (background job);
 
 **RN - Regras de negócio**
