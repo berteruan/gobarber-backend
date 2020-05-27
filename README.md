@@ -64,8 +64,8 @@
 
 **RN - Regras de negócio**
 
-- [ ] Cada agendamento deve durar 1h exatamente;
-- [ ] Os agendamentos devem estar disponíveis entre 8h às 18h (Primeiro às 8h, último às 17h);
-- [ ] O usuário não pode agendar em um horário já ocupado;
-- [ ] O usuário não pode agendar em um horário que já passou;
-- [ ] O usuário não pode agendar serviços consigo mesmo;
+- [x] Cada agendamento deve durar 1h exatamente;
+- [x] Os agendamentos devem estar disponíveis entre 8h às 18h (Primeiro às 8h, último às 17h);
+- [x] O usuário não pode agendar em um horário já ocupado;
+- [x] O usuário não pode agendar em um horário que já passou;
+- [x] O usuário não pode agendar serviços consigo mesmo;
