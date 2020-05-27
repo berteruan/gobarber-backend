@@ -41,7 +41,7 @@
 
 **RNF - Requisitos não funcionais**
 
-- [ ] Os agendamentos do prestador no dia devem ser armazenados em cache;
+- [x] Os agendamentos do prestador no dia devem ser armazenados em cache;
 - [x] As notificações do prestador devem ser armazenadas no MongoDB;
 - [ ] As notificações do prestador devem ser enviadas em tempo real com Socket.io;
 
@@ -60,7 +60,7 @@
 
 **RNF - Requisitos não funcionais**
 
-- [ ] A listagem de prestadores deve ser armazenada em cache;
+- [x] A listagem de prestadores deve ser armazenada em cache;
 
 **RN - Regras de negócio**
 
